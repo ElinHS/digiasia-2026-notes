@@ -566,7 +566,8 @@ def home_view():
     <div class="home-text">
       <p class="eyebrow">DIGIASIA 2026 數位亞洲大會</p>
       <h1>講座筆記</h1>
-      <p class="lede">依時間排列。每場筆記分成快速摘要、核心框架、金句摘錄、案例故事、行動清單五個部分，行動清單以媒體企劃為主。</p>
+      <p class="lede">每場筆記分成以下五個部分</p>
+      <p class="tags"><span>#快速摘要</span><span>#核心框架</span><span>#金句摘錄</span><span>#案例故事</span><span>#行銷產業行動清單</span></p>
       <p class="count"><span class="mono">{done}</span> 份筆記已整理，其餘場次陸續更新。</p>
     </div>
     <img class="hero-mark" src="{HERO_SRC}" alt="DIGIASIA 2026 HEARTIFICIAL Intelligent Marketing：用人心的溫度，成就無法被演算的感動">
