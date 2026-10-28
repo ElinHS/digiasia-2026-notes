@@ -416,6 +416,7 @@ NOTES = [
 NOTE_BY_ID = {n["id"]: n for n in NOTES}
 
 BRAND_SRC = "data:image/png;base64," + base64.b64encode((HERE / "photos" / "heartificial.png").read_bytes()).decode()
+HERO_SRC = "data:image/png;base64," + base64.b64encode((HERE / "photos" / "heartificial-lg.png").read_bytes()).decode()
 BRAND = f'<a class="brand" href="#home" aria-label="回到首頁"><img src="{BRAND_SRC}" alt="DIGIASIA 2026 HEARTIFICIAL Intelligent Marketing"></a>'
 
 
@@ -516,12 +517,14 @@ def home_view():
     done = sum(1 for n in NOTES)
     return f'''
 <div class="view" data-view="home">
-  <header class="home-head"><div class="wrap">
-    {BRAND}
-    <p class="eyebrow">DIGIASIA 2026 數位亞洲大會</p>
-    <h1>講座筆記</h1>
-    <p class="lede">依時間排列。每場筆記分成快速摘要、核心框架、金句摘錄、案例故事、行動清單五個部分，行動清單以媒體企劃為主。</p>
-    <p class="count"><span class="mono">{done}</span> 份筆記已整理，其餘場次陸續更新。</p>
+  <header class="home-head"><div class="wrap home-grid">
+    <div class="home-text">
+      <p class="eyebrow">DIGIASIA 2026 數位亞洲大會</p>
+      <h1>講座筆記</h1>
+      <p class="lede">依時間排列。每場筆記分成快速摘要、核心框架、金句摘錄、案例故事、行動清單五個部分，行動清單以媒體企劃為主。</p>
+      <p class="count"><span class="mono">{done}</span> 份筆記已整理，其餘場次陸續更新。</p>
+    </div>
+    <img class="hero-mark" src="{HERO_SRC}" alt="DIGIASIA 2026 HEARTIFICIAL Intelligent Marketing：用人心的溫度，成就無法被演算的感動">
   </div></header>
   <div class="wrap days">{days}</div>
 </div>'''

@@ -176,3 +176,13 @@ td:first-child { font-weight: 500; white-space: nowrap; }
 .pager { align-items: end; }
 .pager > * { flex: 1 1 0; min-width: 0; }
 .pager .mid { text-align: center; }
+
+/* home hero: title + event mark side by side */
+.home-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 460px); gap: 24px 48px; align-items: center; }
+.home-text { min-width: 0; }
+.home-text .eyebrow { max-width: none; }
+.hero-mark { display: block; width: 100%; height: auto; border-radius: 6px; }
+@media (max-width: 760px) {
+  .home-grid { grid-template-columns: minmax(0, 1fr); }
+  .hero-mark { max-width: 420px; order: -1; }
+}
