@@ -428,6 +428,7 @@ def note_view(n, prev_n, next_n):
     secs = "".join(f'<section class="part" id="{sid}-{k}"><h2>{E(lbl)}</h2>{body[k]}</section>' for k, lbl in SECTIONS)
     pager = '<nav class="pager">'
     pager += f'<a href="#{prev_n["id"]}"><small>上一場</small>{E(prev_n["speaker"])}</a>' if prev_n else "<span></span>"
+    pager += '<a href="#home" class="mid"><small>回到</small>全部場次</a>'
     pager += f'<a href="#{next_n["id"]}" class="nx"><small>下一場</small>{E(next_n["speaker"])}</a>' if next_n else "<span></span>"
     pager += "</nav>"
     return f'''

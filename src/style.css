@@ -173,3 +173,6 @@ td:first-child { font-weight: 500; white-space: nowrap; }
 .brand img { width: 100%; height: auto; border-radius: 4px; }
 .brand:hover img { filter: brightness(1.08); }
 .home-head .eyebrow, .back { display: inline-block; max-width: calc(100% - clamp(120px, 18vw, 200px) - 16px); }
+.pager { align-items: end; }
+.pager > * { flex: 1 1 0; min-width: 0; }
+.pager .mid { text-align: center; }
