@@ -16,7 +16,6 @@ SCHEDULE = {
         ("15:35–15:55", "AI as the partner, opponent, inevitability and hype", "Sergey Efimov（OMD）", ["n1028-06"]),
         ("15:55–16:15", "當 AI Agent 遇上大數據：OpView Agent Tools", "楊立偉（意藍資訊）", ["n1028-07"]),
         ("16:15–16:35", "AI 時代下，數位媒體生態系的重構", "夏浩文（艾普特媒體）", ["n1028-08"]),
-        ("16:35–16:55", "Mentor：一站式 AI 廣告投放平台", "藍信彰（台北數位集團）", None),
         ("16:55–17:15", "Why 180 million people don't fit in one prompt", "Muhammad Nafeezul Bari", None),
         ("17:15–18:00", "焦點討論(I)：AI 文藝復興", "主持：陳文琪（佳格）", None),
     ]),
