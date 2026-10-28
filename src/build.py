@@ -456,7 +456,7 @@ NOTES = [
         ],
     },
     {
-        "id": "n1028-09", "bio": ["孟加拉廣告代理商 Adcomm 的業務轉型事業執行副總裁。", "負責 Adcomm 的 AI 實驗，以及公司內部的 AI 工作平台。", "公開資料未查到更早的經歷。"], "bio_src": "大會講者頁、講者自述",
+        "id": "n1028-09", "bio": ["孟加拉廣告代理商 Adcomm 的業務轉型事業執行副總裁。", "負責 Adcomm 的 AI 實驗，以及公司內部的 AI 工作平台。"], "bio_src": "大會講者頁、講者自述",
         "day": "10/28 WED", "time": "16:55–17:15",
         "title": "Why 180 million people don't fit in one prompt",
         "speaker": "Muhammad Nafeezul Bari", "role": "Adcomm Limited（孟加拉）業務轉型事業執行副總裁",
