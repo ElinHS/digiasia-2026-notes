@@ -18,6 +18,7 @@ DIGIASIA 2026 數位亞洲大會（10/28–10/29，台北）講座筆記，同�
 | 10/28 | 15:35–15:55 | Sergey Efimov（OMD Resolution） | Artificial intelligence as the partner, opponent, inevitability and hype |
 | 10/28 | 15:55–16:15 | 楊立偉（意藍資訊） | 當 AI Agent 遇上大數據：以 OpView Agent Tools 打造你的個人輿情與行銷助理 |
 | 10/28 | 16:15–16:35 | 夏浩文（艾普特媒體） | AI 時代下，數位媒體生態系的重構 |
+| 10/28 | 16:55–17:15 | Muhammad Nafeezul Bari（Adcomm） | Why 180 million people don't fit in one prompt |
 
 其餘場次陸續更新。
 
