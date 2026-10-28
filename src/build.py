@@ -456,7 +456,7 @@ def home_view():
         items = ""
         for time, title, who, st in rows:
             if isinstance(st, list):
-                links = "".join(f'<a class="chip done" href="#{i}">{E(NOTE_BY_ID[i]["speaker"].split(" ")[0])}</a>' for i in st)
+                links = "".join(f'<a class="chip done" href="#{i}">{(E(NOTE_BY_ID[i]["speaker"].split(" ")[0]) + " ") if len(st) > 1 else ""}講座筆記精華&gt;&gt;</a>' for i in st)
                 items += f'<li class="row has"><span class="t mono">{E(time)}</span><div class="ti"><a class="tl" href="#{st[0]}">{E(title)}</a><span class="sp">{E(who)}</span></div><div class="st">{links}</div></li>'
             else:
                 chip = '<span class="chip skip">略過</span>' if st == "skip" else '<span class="chip wait">待整理</span>'
