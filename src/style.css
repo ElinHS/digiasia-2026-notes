@@ -188,4 +188,3 @@ td:first-child { font-weight: 500; white-space: nowrap; }
 }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 0; }
 .tags span { font-size: 14px; padding: 2px 10px; border: 1px solid var(--accent); border-radius: 999px; color: var(--accent); }
-.lede .tags { display: inline-block; margin-top: 4px; color: var(--accent); word-spacing: .4em; }

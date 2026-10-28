@@ -566,7 +566,7 @@ def home_view():
     <div class="home-text">
       <p class="eyebrow">DIGIASIA 2026 數位亞洲大會</p>
       <h1>講座筆記</h1>
-      <p class="lede">每場筆記分成以下五個部分</p>
+      <p class="lede">每場筆記分成以下五個部分（省略部分場次）</p>
       <p class="tags"><span>#快速摘要</span><span>#核心框架</span><span>#金句摘錄</span><span>#案例故事</span><span>#行銷產業行動清單</span></p>
       <p class="count"><span class="mono">{done}</span> 份筆記已整理，其餘場次陸續更新。</p>
     </div>
