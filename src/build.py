@@ -17,7 +17,6 @@ SCHEDULE = {
         ("15:55–16:15", "當 AI Agent 遇上大數據：OpView Agent Tools", "楊立偉（意藍資訊）", ["n1028-07"]),
         ("16:15–16:35", "AI 時代下，數位媒體生態系的重構", "夏浩文（艾普特媒體）", ["n1028-08"]),
         ("16:55–17:15", "Why 180 million people don't fit in one prompt", "Muhammad Nafeezul Bari", ["n1028-09"]),
-        ("17:15–18:00", "焦點討論(I)：AI 文藝復興", "主持：陳文琪（佳格）", None),
     ]),
     "1029": ("10/29", "THU", [
         ("10:00–10:30", "Beyond Automation：Human-Centered AI for the Future of Marketing", "宮部裕介（博報堂）", None),
