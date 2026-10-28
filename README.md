@@ -15,6 +15,7 @@ DIGIASIA 2026 數位亞洲大會（10/28–10/29，台北）講座筆記，同�
 | 10/28 | 14:20–14:40 | Bharat Avalani | Algorithm of the Heart |
 | 10/28 | 14:40–15:00 | Fredrik Borestrom（IAA／LinkedIn） | What's Coming Next? Welcome to the Reputation Age |
 | 10/28 | 15:00–15:20 | Linda D. Hollebeek | From Artificial Intelligence to Heartificial Intelligence |
+| 10/28 | 15:35–15:55 | Sergey Efimov（OMD Resolution） | Artificial intelligence as the partner, opponent, inevitability and hype |
 
 其餘場次陸續更新。
 
