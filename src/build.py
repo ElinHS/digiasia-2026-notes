@@ -548,7 +548,7 @@ def block(b):
     raise ValueError(t)
 
 
-SECTIONS = [("summary", "快速摘要"), ("frameworks", "核心框架"), ("quotes", "金句摘錄"), ("cases", "案例故事"), ("actions", "行動清單")]
+SECTIONS = [("summary", "摘要"), ("frameworks", "核心架構"), ("quotes", "金句摘錄"), ("cases", "案例"), ("actions", "行銷上的行動建議")]
 
 
 def note_view(n, prev_n, next_n):
@@ -559,7 +559,7 @@ def note_view(n, prev_n, next_n):
     if n.get("bio"):
         bio = f'<div class="head-bio"><span class="eyebrow">講者背景</span><p>{lines(n["bio"])}</p><p class="src">資料來源：{E(n.get("bio_src",""))}</p></div>'
     summary = "".join(f'<div class="sum"><span class="num">{i}</span><div><h3>{E(h)}</h3><p>{lines(ls)}</p></div></div>' for i, (h, ls) in enumerate(n["summary"], 1))
-    fw = "".join(f'<div class="fw"><h3><span class="tag">框架{"一二三四五六七八"[i]}</span>{E(t)}</h3>' + "".join(block(b) for b in bs) + "</div>" for i, (t, bs) in enumerate(n["frameworks"]))
+    fw = "".join(f'<div class="fw"><h3><span class="tag">架構{"一二三四五六七八"[i]}</span>{E(t)}</h3>' + "".join(block(b) for b in bs) + "</div>" for i, (t, bs) in enumerate(n["frameworks"]))
     quotes = "".join(f'<blockquote class="q">{lines(q)}</blockquote>' for q in n["quotes"])
     cases = "".join(f'<div class="case"><h3>{E(t)}</h3>' + "".join(block(b) for b in bs) + "</div>" for t, bs in n["cases"])
     acts = "".join(f'<div class="act"><h3><span class="role">{E(r)}</span></h3><ul>' + "".join(f"<li>{lines(it)}</li>" for it in items) + "</ul></div>" for r, items in n["actions"])
@@ -583,7 +583,7 @@ def note_view(n, prev_n, next_n):
   <nav class="tabs"><div class="wrap">{nav}</div></nav>
   <div class="wrap note-grid">
     <aside class="side">
-      <div class="idx"><span class="eyebrow">重點索引</span><ul>{idx}</ul></div>
+      <div class="idx"><span class="eyebrow">Keyword summary</span><ul>{idx}</ul></div>
     </aside>
     <main class="content">{secs}{pager}</main>
   </div>
@@ -610,7 +610,7 @@ def home_view():
       <p class="eyebrow">DIGIASIA 2026 數位亞洲大會</p>
       <h1>講座筆記</h1>
       <p class="lede">每場筆記分成以下五個部分（省略部分場次）</p>
-      <p class="tags"><span>#快速摘要</span><span>#核心框架</span><span>#金句摘錄</span><span>#案例故事</span><span>#行銷產業行動清單</span></p>
+      <p class="tags"><span>#摘要</span><span>#核心架構</span><span>#金句摘錄</span><span>#案例</span><span>#行銷上的行動建議</span></p>
       <p class="count"><span class="mono">{done}</span> 份筆記已整理，其餘場次陸續更新。</p>
     </div>
     <img class="hero-mark" src="{HERO_SRC}" alt="DIGIASIA 2026 HEARTIFICIAL Intelligent Marketing：用人心的溫度，成就無法被演算的感動">
@@ -671,25 +671,25 @@ def note_md(n):
         out.append(f"（{n['kicker']}）")
     if n.get("bio"):
         out += ["", "> 講者背景"] + [f"> {x}" for x in n["bio"]] + [f"> （資料來源：{n.get('bio_src','')}）"]
-    out += ["", "---", "", "## 重點索引", "", "| 關鍵詞 | 說明 |", "|---|---|"] + [f"| {k} | {v} |" for k, v in n["index"]]
-    out += ["", "---", "", "## 快速摘要", ""]
+    out += ["", "---", "", "## Keyword summary", "", "| 關鍵詞 | 說明 |", "|---|---|"] + [f"| {k} | {v} |" for k, v in n["index"]]
+    out += ["", "---", "", "## 摘要", ""]
     for i, (h, ls) in enumerate(n["summary"], 1):
         out += [f"**{i}. {h}**", md_lines(ls), ""]
-    out += ["---", "", "## 核心框架", ""]
+    out += ["---", "", "## 核心架構", ""]
     for i, (t, bs) in enumerate(n["frameworks"]):
-        out += [f"**框架{'一二三四五六七八'[i]}：{t}**", ""]
+        out += [f"**架構{'一二三四五六七八'[i]}：{t}**", ""]
         for b in bs:
             out += [md_block(b), ""]
     out += ["---", "", "## 金句摘錄", ""]
     for q in n["quotes"]:
         out += ["> " + "".join(q), ""]
-    out += ["---", "", "## 案例故事", ""]
+    out += ["---", "", "## 案例", ""]
     for t, bs in n["cases"]:
         out += [f"**{t}**"]
         for b in bs:
             out += [md_block(b)]
         out += [""]
-    out += ["---", "", "## 行動清單", ""]
+    out += ["---", "", "## 行銷上的行動建議", ""]
     for role, items in n["actions"]:
         out += [f"**{role}**"] + ["- " + "".join(it) for it in items] + [""]
     return "\n".join(out)
