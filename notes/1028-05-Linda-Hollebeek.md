@@ -125,10 +125,12 @@ AI 要以顧客為中心來設計，而不是以技術為中心。
 ## 金句摘錄
 
 > 能力更強，不等於互動更深。
+> 原文：Greater capability ≠ deeper engagement.
 
 > AI 優化體驗，人賦予意義。
 
 > 贏的品牌，不是 AI 用得最多的，而是用 AI 變得更有人味的。
+> 原文：The brands that win will not be those with the most AI. They will be those that use AI to become more human.
 
 ---
 

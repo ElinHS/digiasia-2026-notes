@@ -19,8 +19,7 @@ SCHEDULE = {
         ("16:55–17:15", "Why 180 million people don't fit in one prompt", "Muhammad Nafeezul Bari", ["n1028-09"]),
     ]),
     "1029": ("10/29", "THU", [
-        ("10:00–10:30", "Beyond Automation：Human-Centered AI for the Future of Marketing", "宮部裕介（博報堂）", None),
-        ("10:30–11:00", "沒有 AI，靈魂放不大", "Sulin Lau（Grab）", None),
+        ("10:30–11:00", "沒有 AI，靈魂放不大", "Sulin Lau（Grab）", ["n1029-01"]),
         ("11:00–11:30", "Becoming Frontier：Agentic AI Transformation", "Mahesh Neelakantan（Microsoft）", None),
         ("11:30–12:00", "AI 時代的挑戰：建構詐騙聯防網，重建數位信任", "主持：盧諭緯", None),
         ("14:00–14:30", "焦點討論(II)：AI 時代中小型廣告行銷業者的突破之道", "主持：王冠翔", None),
@@ -190,7 +189,7 @@ NOTES = [
                                  ("ol", ["自己的故事", "別人告訴你的故事", "你讀到的故事"]),
                                  ("p", ["能用自己的故事，就用自己的。", "怎麼找？每天睡前，想想今天讓你開心和難過的時刻。", "故事，就藏在這兩者之間。"])]),
         ],
-        "quotes": [["理性是「知道」的語言。", "故事是「相信」的語言。"], ["機器會計算、會修正。", "只有人能連結。"], ["先連結，", "再計算或修正。"]],
+        "quotes": [["理性是「知道」的語言。", "故事是「相信」的語言。", "原文：Reason is the language of knowing. Story is the language of believing."], ["機器會計算、會修正。", "只有人能連結。"], ["先連結，", "再計算或修正。"]],
         "cases": [
             ("新舊 CEO 的交接大會", [("ul", ["背景：2019 年，香港一家大型顧問公司換 CEO，交接最後一天開全員大會。", "舊 CEO：講電影《關鍵少數》。NASA 主管 Dorothy Vaughan 看到 IBM 電腦進駐，擔心工作被取代，當天就去圖書館自學 Fortran 程式語言，再教會整個團隊。最後他問：「公司在轉型，我們的 Fortran 是什麼？」", "新 CEO：哈佛出身，願景、使命、數字樣樣齊全。講者給他 11 分（滿分 10 分）。", "結果：散會後，幾乎所有人都去找舊 CEO 討論轉型的點子，新 CEO 一個人站在原地。"])]),
             ("雅加達的「快樂混亂」", [("ul", ["數據：雅加達的交通很糟。", "親身經歷：有人要切進來，駕駛會讓路，認為對方可能在趕時間；還有志工幫忙指揮。", "結論：交通很亂，但是一種「快樂的混亂」。", "重點：數據配上親身經歷，就有說服力。"])]),
@@ -287,7 +286,7 @@ NOTES = [
             ("效率 vs 意義", [("table", ["", "誰負責", "作用"], [["效率", "AI", "讓顧客順利走完旅程"], ["意義", "人", "給顧客留下來的理由"]]),
                              ("p", ["在選擇很多的品類裡，意義帶來忠誠。", "一段完美優化的旅程，仍可能冰冷、讓人記不住。"])]),
         ],
-        "quotes": [["能力更強，", "不等於互動更深。"], ["AI 優化體驗，", "人賦予意義。"], ["贏的品牌，不是 AI 用得最多的，", "而是用 AI 變得更有人味的。"]],
+        "quotes": [["能力更強，", "不等於互動更深。", "原文：Greater capability ≠ deeper engagement."], ["AI 優化體驗，", "人賦予意義。"], ["贏的品牌，不是 AI 用得最多的，", "而是用 AI 變得更有人味的。", "原文：The brands that win will not be those with the most AI. They will be those that use AI to become more human."]],
         "cases": [
             ("講者的結尾提問", [("aside", ["這場以觀念為主，沒有具體的品牌案例。"]),
                                 ("p", ["如果 AI 能處理越來越多行銷工作，", "你會選擇讓品牌裡的人，專注做什麼？"]),
@@ -499,6 +498,67 @@ NOTES = [
             ("客戶服務", [["提案前先問：品牌有什麼資格說這件事？", "避免品牌介入它沒有立場談的議題。"]]),
         ],
     },
+    {
+        "id": "n1029-01", "bio": ["Grab 區域行銷與品牌負責人，管理 Grab 各市場的品牌，以及消費者端、企業端的行銷。", "2019 年加入 Grab，之前是 Facebook 東南亞代理商合作負責人。", "更早在 BBDO、DDB 帶品牌策略團隊，也當過奧美馬來西亞董事總經理，以及電信公司 Maxis、DiGi 的行銷主管。", "自述做了十年企劃，現在仍用企劃的方式思考。"], "bio_src": "Marketech APAC 講者頁、Marketing-Interactive 2019 年報導、講者自述",
+        "day": "10/29 THU", "time": "10:30–11:00",
+        "title": "Scale with Soul",
+        "speaker": "Sulin Lau", "role": "Grab 區域行銷、品牌與創意負責人",
+        "kicker": "大會中文講題：沒有 AI，靈魂放不大",
+        "index": [("Scale with Soul", "人力不變、業務變多，還要讓團隊保有熱情"), ("品牌媽媽", "講者自稱，帶一個跨七國的在地品牌團隊"),
+                  ("公民開發者", "每個行銷人都自己動手做小工具"), ("小 hack", "從「真希望有這個」開始，自己做出來"),
+                  ("先玩，再培訓", "讓人玩 AI，比正式培訓更有效")],
+        "summary": [
+            ("人力不變，業務一直變多", ["Grab 從叫車起家，後來擴到外送、生鮮、數位銀行、超市、投資。", "講者說，她的團隊人數從叫車時代到現在都一樣。", "所以一直在找規模化的方法。"]),
+            ("規模很重要，但規模激勵不了人", ["要和代理商搶最有熱情的人才，只靠效率不夠。", "講者分享五個做法，讓人的部分在自動化時代保持「著火」。"]),
+            ("用 AI 做以前不可能的事", ["司機最懂在地，卻沒時間、也不會拍內容。", "Grab 用 AI 分身，把真實司機變成品牌的 KOL，並付他們版稅。"]),
+            ("把討厭的工作交給 AI，把人變成小開發者", ["AI 代理幫忙找資料、做摘要，連「不好意思問」的小問題都有人問了。", "122 人自願組隊，做出 57 個專案，並像代理商一樣頒獎表揚。"]),
+            ("補上服務不到的缺口，用「玩」帶動學習", ["Merchant AI 服務長尾小商家，滿意度 97.6%。", "團隊用遊戲和創意競賽學 AI，而不是只上課。"]),
+        ],
+        "frameworks": [
+            ("Scale with Soul 五個做法", [("table", ["#", "原文", "意思"], [["1", "Dream Electric Sheep", "用 AI 實現以前預算、執行上做不到的點子"], ["2", "Give AI jobs we hate", "把大家討厭的工作交給 AI"], ["3", "Celebrate Variants of Creativity", "把「動手做工具」也當成一種創意來表揚"], ["4", "Correct gaps in under-service", "用 AI 服務過去照顧不到的對象"], ["5", "Don't Just Upskill. Play", "不只培訓，要讓人玩"]]),
+                                        ("p", ["「Dream Electric Sheep」講者說是引用《銀翼殺手》，用來指「沒有 AI 就不可能的新策略和點子」。"]),
+                                        ("aside", ["逐字稿第 2、3、4 點的開頭有缺漏，對應內容依簡報標題與上下文歸類。"]),
+                                        ("img", "6255", "Scale with Soul：Sulin's Top 5 tips in 15 mins")]),
+            ("科技帶來的三層收益", [("flow", ["規模收益（Scale gains）", "一致性收益（Consistency gains）", "創新收益（Innovation gains）"], 2),
+                                   ("p", ["簡報標題：光靠規模，無法激勵最好的人才。", "簡報上寫：最好的行銷人，只有在心和靈魂都著火時，才在最佳狀態。"]),
+                                   ("aside", ["講者口頭沒有逐層說明這張圖，三層內容依簡報字面整理。"]),
+                                   ("img", "6254", "But scale alone won't energize & inspire the best talents")]),
+            ("讓全員動手做工具的三個問題", [("ol", ["你討厭做什麼？", "你希望有什麼？", "有什麼事，沒有 AI 就不可能做到？"]),
+                                          ("flow", ["自選題目", "自組團隊", "主管做嚴謹度檢查", "重複的專案互相比賽，留下最好的"], -1),
+                                          ("p", ["2025 年 12 月開始。主管只檢查：問題有沒有想清楚、資源、治理。", "前提是「鋪好路」：企業級 AI 工具、使用政策、安全開發的治理架構。"])]),
+        ],
+        "quotes": [["不懂 AI，就是不懂行銷。", "原文：AI illiteracy is marketing illiteracy."],
+                   ["如果你是主管，我的建議很簡單：", "把「玩」排進工作時間。", "原文：make time for play as part of work."],
+                   ["知名度不是目標，再想一次。", "原文：Awareness is not an objective, try again."],
+                   ["我們不必強迫任何人，", "只需要確保路已經鋪好。", "原文：We didn't have to force anyone; we just needed to make sure the paved road was there."]],
+        "cases": [
+            ("司機變成 AI 分身 KOL（菲律賓）", [("ul", ["背景：Grab 是東南亞的超級 App，在一千個城市營運。每個城鎮最具代表性的臉，是司機。司機最懂商家、乘客和巷弄，但不是內容創作者，也沒時間。", "做法：2024 年初開始。挑選合作多年的司機，付版稅取得肖像和故事的使用權，用 AI 分身技術把他們做成品牌大使。", "內容：介紹他們熟悉的餐廳、私房景點和路線；觀光市場則做給外國遊客的內容，例如「像在地人一樣吃」「避開計程車跳表詐騙」。", "人物：簡報上的司機包括傳統市場攤販、身障者、癌症倖存者、單親媽媽等。", "重點：已在菲律賓上線，正擴展到其他市場。司機也多一份實際收入。"]),
+                                             ("img", "6257", "Real Drivers into social KOLs, with help from AI"),
+                                             ("img", "6258", "Drivers also now front Grab social content for foreign tourists")]),
+            ("AI 代理幫忙找研究資料", [("ul", ["以前：8 年累積超過 10,000 份自有洞察研究。要找「2023 年印尼生鮮趨勢簡報的某一頁」，沒人想翻。", "現在：在 Slack 問 AI 代理，它找出資料、做摘要，並連到相關的數據或研究。", "意外收穫：以前太小眾、不好意思問人的問題，現在都有人問。", "例子：「找出 2025 年 GrabMart 越南前 10 名暢銷防曬品，並給 3 個洞察」。"]),
+                                     ("stats", [("92.6%", "防曬品訂單用了促銷"), ("約 51%", "4–8 月貢獻的銷量")]),
+                                     ("aside", ["以上兩個數字出自簡報上 AI 的回答，逐字稿沒有提到。"]),
+                                     ("img", "6259", "Before.. 10,000+ proprietary insights studies"),
+                                     ("img", "6260", "No questions are left un-asked, or unanswered")]),
+            ("122 人、57 個自建專案", [("ul", ["規模：2025 年 12 月啟動，122 人自願參加，共 57 個專案。重複的專案互相比賽，例如三組研究團隊做同一件事，最後留下一組。", "表揚：成功的團隊做 6 分鐘分享，並頒發獎盃。", "Dimas：印尼公關主管，前記者，不是工程師。用印尼文做 GEO（生成式引擎優化）工具，補足 AI 工具對東南亞語言支援不足的問題。", "Gading：研究員。用 690 萬組連結到使用者 ID 的問卷問答，和三位同事做出 Morpheus。這是「真實受訪者」的虛擬焦點團體，不是合成人物，約 4 個月大。", "口袋企劃：Grab 行銷部只有約 4 位企劃，卻要服務 400 位行銷人。這個工具會嚴格退回 brief，要求有證據、多方向探索。"])]),
+            ("Merchant AI：服務長尾小商家", [("ul", ["背景：客戶經理不可能照顧到所有長尾商家。", "做法：2024 年推出，用 AI 告訴商家可以做哪些小改變來多賺錢。", "成果：用過的商家每月回來用，訂單和 GMV 都成長。", "特色：AI 回答帶幽默和同理心。商家說「最近生意不好」，它會先安慰再給建議。", "講者觀點：做了十年企劃，做過幾百個品牌屋，多半沒用上，因為無法落實到日常接觸點。AI 讓品牌承諾第一次能被執行和規模化。"]),
+                                          ("stats", [("97.6%", "滿意度（講者說科技業能有 40% 就算幸運）")])]),
+            ("用遊戲和競賽學 AI", [("ul", ["GEOvengers：上週辦的 GEO 內部挑戰，名稱是「拯救 Grab，免於在 AI 裡隱形」，有排行榜、多回合積分。", "AI 微短劇競賽：已連續辦三年創意挑戰。今年要做概念、劇本、預告和完整集數，分創意和非創意職務兩組。"]),
+                                 ("stats", [("43 部", "今年提交的 AI 微短劇作品")])]),
+        ],
+        "actions": [
+            ("媒體企劃", [["盤點過去的媒體結案報告和研究，整理到同一個資料夾，", "作為日後 AI 代理可查詢的資料庫起點。"],
+                         ["列出 3 個「太小眾、不好意思問」的問題，例如某品類的季節性高峰，", "下次有 AI 工具時先拿來測試。"],
+                         ["建立 brief 退件檢查：知名度不能單獨當目標、受眾要對得上數據。", "提案前先自己跑一次。"],
+                         ["本季找一個客戶，查它在 ChatGPT、Claude 等生成式搜尋裡被提到的情況，", "把 GEO 當成新的媒體版面來規劃。"]]),
+            ("創意", [["提案時多一個選項：用真實員工、店員或通路夥伴當代言人，", "評估 AI 分身的可行性與授權費用。"],
+                      ["每季辦一次 AI 創意小競賽，例如 AI 微短劇，", "分創意與非創意組，不只看作品，也看做法。"]]),
+            ("數據", [["參考 Morpheus：先盤點手上有哪些連結到真實受訪者的問卷資料，", "評估能不能做虛擬焦點團體。", "正式決策前，仍要用真實數據驗證。"]]),
+            ("客戶服務", [["找出客戶顧不到的長尾對象，例如經銷商、小門市，", "提案用 AI 助理補上服務缺口。"]]),
+            ("全體", [["每人回答三個問題：討厭做什麼、希望有什麼、沒有 AI 做不到什麼。", "從答案挑出可以自己做的小工具。"],
+                      ["主管每月排固定時間「玩 AI」，並公開表揚做出工具的人。"]]),
+        ],
+    },
 ]
 
 NOTE_BY_ID = {n["id"]: n for n in NOTES}
@@ -560,7 +620,7 @@ def note_view(n, prev_n, next_n):
         bio = f'<div class="head-bio"><span class="eyebrow">講者背景</span><p>{lines(n["bio"])}</p><p class="src">資料來源：{E(n.get("bio_src",""))}</p></div>'
     summary = "".join(f'<div class="sum"><span class="num">{i}</span><div><h3>{E(h)}</h3><p>{lines(ls)}</p></div></div>' for i, (h, ls) in enumerate(n["summary"], 1))
     fw = "".join(f'<div class="fw"><h3><span class="tag">框架{"一二三四五六七八"[i]}</span>{E(t)}</h3>' + "".join(block(b) for b in bs) + "</div>" for i, (t, bs) in enumerate(n["frameworks"]))
-    quotes = "".join(f'<blockquote class="q">{lines(q)}</blockquote>' for q in n["quotes"])
+    quotes = "".join(f'<blockquote class="q">{lines([x for x in q if not x.startswith("原文：")])}' + "".join(f'<span class="orig">{E(x)}</span>' for x in q if x.startswith("原文：")) + '</blockquote>' for q in n["quotes"])
     cases = "".join(f'<div class="case"><h3>{E(t)}</h3>' + "".join(block(b) for b in bs) + "</div>" for t, bs in n["cases"])
     acts = "".join(f'<div class="act"><h3><span class="role">{E(r)}</span></h3><ul>' + "".join(f"<li>{lines(it)}</li>" for it in items) + "</ul></div>" for r, items in n["actions"])
     body = {"summary": summary, "frameworks": fw, "quotes": f'<div class="quotes">{quotes}</div>', "cases": cases, "actions": acts}
@@ -682,7 +742,7 @@ def note_md(n):
             out += [md_block(b), ""]
     out += ["---", "", "## 金句摘錄", ""]
     for q in n["quotes"]:
-        out += ["> " + "".join(q), ""]
+        out += ["> " + "".join(x for x in q if not x.startswith("原文："))] + ["> " + x for x in q if x.startswith("原文：")] + [""]
     out += ["---", "", "## 案例故事", ""]
     for t, bs in n["cases"]:
         out += [f"**{t}**"]
@@ -695,7 +755,7 @@ def note_md(n):
     return "\n".join(out)
 
 
-MD_NAMES = {"n1028-01": "1028-01-林友琴", "n1028-01b": "1028-01b-佐佐木康晴", "n1028-02": "1028-02-王俞蓉", "n1028-03": "1028-03-Bharat-Avalani", "n1028-04": "1028-04-Fredrik-Borestrom", "n1028-05": "1028-05-Linda-Hollebeek", "n1028-06": "1028-06-Sergey-Efimov", "n1028-07": "1028-07-楊立偉", "n1028-08": "1028-08-夏浩文", "n1028-09": "1028-09-Muhammad-Nafeezul-Bari"}
+MD_NAMES = {"n1028-01": "1028-01-林友琴", "n1028-01b": "1028-01b-佐佐木康晴", "n1028-02": "1028-02-王俞蓉", "n1028-03": "1028-03-Bharat-Avalani", "n1028-04": "1028-04-Fredrik-Borestrom", "n1028-05": "1028-05-Linda-Hollebeek", "n1028-06": "1028-06-Sergey-Efimov", "n1028-07": "1028-07-楊立偉", "n1028-08": "1028-08-夏浩文", "n1028-09": "1028-09-Muhammad-Nafeezul-Bari", "n1029-01": "1029-01-Sulin-Lau"}
 (HERE / "md").mkdir(exist_ok=True)
 for n in NOTES:
     name = MD_NAMES.get(n["id"], n["id"])

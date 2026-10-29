@@ -111,6 +111,7 @@ LinkedIn 也鼓勵人自己寫，不要交給機器。
 ## 金句摘錄
 
 > 理性是「知道」的語言。故事是「相信」的語言。
+> 原文：Reason is the language of knowing. Story is the language of believing.
 
 > 機器會計算、會修正。只有人能連結。
 

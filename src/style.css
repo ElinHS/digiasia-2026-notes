@@ -188,3 +188,6 @@ td:first-child { font-weight: 500; white-space: nowrap; }
 }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 0; }
 .tags span { font-size: 14px; padding: 2px 10px; border: 1px solid var(--accent); border-radius: 999px; color: var(--accent); }
+
+/* original-language line under a quote */
+.q .orig { display: block; margin-top: 8px; font-family: var(--font-body); font-weight: 400; font-size: 15px; line-height: 1.6; color: var(--muted); }
