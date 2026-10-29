@@ -25,6 +25,7 @@ DIGIASIA 2026 數位亞洲大會（10/28–10/29，台北）講座筆記，同�
 | 10/29 | 14:30–14:50 | 張志浩（麥肯） | 代理商的行銷 AI 轉型 |
 | 10/29 | 14:50–15:10 | Jay Kim（AAAZA） | Precise Targeting with Geofencing: Lifestyle and Culture |
 | 10/29 | 16:05–16:25 | 張景翔（潮網科技）、虞秉儒（Criteo） | 潮網科技 YouTube Partner Sales 與 Criteo Commerce Data，打造線上成長引擎 |
+| 10/29 | 16:45–17:25 | 湯昇榮（瀚草）、林家齊（夢想動畫） | AI 能加速產量，但打動人心的仍是人的判斷｜當想像「即時上映」 |
 
 其餘場次陸續更新。
 
