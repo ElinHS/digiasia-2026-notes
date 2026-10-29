@@ -20,6 +20,7 @@ SCHEDULE = {
     ]),
     "1029": ("10/29", "THU", [
         ("10:30–11:00", "沒有 AI，靈魂放不大", "Sulin Lau（Grab）", ["n1029-01"]),
+        ("11:00–11:30", "Becoming Frontier：Agentic AI Transformation", "Mahesh Neelakantan（Microsoft）", ["n1029-02"]),
         ("14:00–14:30", "焦點討論(II)：AI 時代中小型廣告行銷業者的突破之道", "主持：王冠翔", None),
         ("14:30–14:50", "代理商的行銷 AI 轉型", "張志浩（麥肯）", None),
         ("14:50–15:10", "Precise Targeting with Geofencing", "Jay Kim（AAAZA）", None),
@@ -557,6 +558,38 @@ NOTES = [
                       ["主管每月排固定時間「玩 AI」，並公開表揚做出工具的人。"]]),
         ],
     },
+    {
+        "id": "n1029-02", "bio": ["Microsoft 全球零售與消費品顧問團隊的產業總監，駐新加坡，2022 年加入 Microsoft。", "在奧美待了將近 17 年，之後擔任 ADA 區域成長負責人、Newton:TAC 執行長，也創立過三家公司。", "有超過 27 年的行銷經驗，待過印度、斯里蘭卡、越南、台灣、香港、馬來西亞。自述 2008–2010 年住在台北。"], "bio_src": "NRF Big Show APAC 講者頁、Marketing Magazine Malaysia、講者自述",
+        "day": "10/29 THU", "time": "11:00–11:30",
+        "title": "Becoming Frontier：Agentic AI Transformation",
+        "speaker": "Mahesh Neelakantan", "role": "Microsoft 零售與消費品產業總監",
+        "kicker": "",
+        "lead": ["品牌的下一個接觸點是 AI 代理。", "誰被 AI 推薦，誰就被買。"],
+        "index": [("Frontier 企業", "把 AI 當作業系統，重新設計工作"), ("代理式 AI", "AI 串起整條流程，自動跑完"),
+                  ("目標式購物", "先說需求，AI 完成購買"), ("GEO", "讓品牌被 AI 助理推薦")],
+        "summary": [
+            ("Frontier ≠ 工具最多，而是工作方式重新設計", ["AI 成熟度分三階段：個人助理 → AI 代理參與的流程 → 人主導、代理執行。", "現場多數人還在第一階段。"]),
+            ("購物從「滑」變成「說」", ["消費者直接說需求，AI 代理幫忙找、幫忙選、幫忙下單。", "800%：最近一次黑色星期五，AI 代理帶到零售網站的流量成長。"]),
+            ("SEO 之後是 GEO", ["消費者會問 ChatGPT 該買哪個品牌。", "品牌要知道 AI 怎麼回答。"]),
+        ],
+        "frameworks": [
+            ("代理式購物三階段", [("table", ["階段", "AI 做什麼", "品牌要準備什麼（筆記補充）"], [["幫我找", "搜尋、整理", "讓商品資訊被 AI 讀得到"], ["幫我選", "依條件選出最佳", "在 AI 的回答裡被推薦"], ["幫我做", "拿到需求和付款資料，完成交易", "結帳流程能讓 AI 代理完成"]]),
+                                 ("img", "6261", "Frontier is not having the most AI tools. It is redesigning how work gets done.")]),
+        ],
+        "quotes": [["Frontier 不是擁有最多 AI 工具，", "而是重新設計工作的方式。", "原文：Frontier is not having the most AI tools. It is redesigning how work gets done."],
+                   ["品牌的接觸點，不再只是廣告、門市或業務員，", "而是 AI 代理。", "原文：With your brand, the touchpoint is no longer just an ad, a store, or a salesperson; it is actually an agent."]],
+        "cases": [
+            ("四個案例一覽", [("table", ["案例", "做法", "成果"], [["Microsoft 行銷團隊", "用內部工具 AI Content Composer，從 brief 直接產出網頁", "大型發表準備時間：2 個月 → 2 週"], ["GEO 稽核工具", "1,000 個美妝問題丟進 AI 模型，量測品牌能見度", "幾天的人工 → AI 代理自動完成，並直接改寫內容"], ["Bria", "AI 一次產出多版本、多尺寸素材", "改標題、顏色、尺寸都能即時完成"], ["Typeface", "餵入品牌手冊，產出符合品牌的內容", "「像一夜之間導入一家新代理商」"]])]),
+        ],
+        "actions": [
+            ("媒體企劃", [["本季挑一個品類，列出 30–50 個消費者可能問 AI 的問題，", "實際丟進 ChatGPT、Perplexity，記錄客戶品牌被提到的次數和排名，", "當作 GEO 的基準線。"],
+                         ["媒體規劃加一個新接觸點：AI 代理。", "評估客戶的商品資訊，是否容易被 AI 讀取和推薦。"],
+                         ["用「幫我找、幫我選、幫我做」三階段，", "檢查客戶的電商通路目前停在哪一段。"]]),
+            ("創意", [["把品牌手冊和風格指南整理成 AI 能讀的格式，", "作為導入 AI 生成工具的第一步。"],
+                      ["多尺寸、多版本的延伸工作，先測試用 AI 工具處理，", "把時間留給核心創意。"]]),
+            ("客戶服務", [["提案時說明 AI 成熟度三階段，", "幫客戶判斷各部門目前在哪一階段、下一步要做什麼。"]]),
+        ],
+    },
 ]
 
 NOTE_BY_ID = {n["id"]: n for n in NOTES}
@@ -616,7 +649,7 @@ def note_view(n, prev_n, next_n):
     bio = ""
     if n.get("bio"):
         bio = f'<div class="head-bio"><span class="eyebrow">講者背景</span><p>{lines(n["bio"])}</p><p class="src">資料來源：{E(n.get("bio_src",""))}</p></div>'
-    summary = "".join(f'<div class="sum"><span class="num">{i}</span><div><h3>{E(h)}</h3><p>{lines(ls)}</p></div></div>' for i, (h, ls) in enumerate(n["summary"], 1))
+    summary = (f'<p class="lead-q"><span class="eyebrow">一句話結論</span>{lines(n["lead"])}</p>' if n.get("lead") else "") + "".join(f'<div class="sum"><span class="num">{i}</span><div><h3>{E(h)}</h3><p>{lines(ls)}</p></div></div>' for i, (h, ls) in enumerate(n["summary"], 1))
     fw = "".join(f'<div class="fw"><h3><span class="tag">框架{"一二三四五六七八"[i]}</span>{E(t)}</h3>' + "".join(block(b) for b in bs) + "</div>" for i, (t, bs) in enumerate(n["frameworks"]))
     quotes = "".join(f'<blockquote class="q">{lines([x for x in q if not x.startswith("原文：")])}' + "".join(f'<span class="orig">{E(x)}</span>' for x in q if x.startswith("原文：")) + '</blockquote>' for q in n["quotes"])
     cases = "".join(f'<div class="case"><h3>{E(t)}</h3>' + "".join(block(b) for b in bs) + "</div>" for t, bs in n["cases"])
@@ -730,6 +763,8 @@ def note_md(n):
     if n.get("bio"):
         out += ["", "> 講者背景"] + [f"> {x}" for x in n["bio"]] + [f"> （資料來源：{n.get('bio_src','')}）"]
     out += ["", "---", "", "## Keyword summary", "", "| 關鍵詞 | 說明 |", "|---|---|"] + [f"| {k} | {v} |" for k, v in n["index"]]
+    if n.get("lead"):
+        out += ["", "---", "", "## 一句話結論", "", "**" + "".join(n["lead"]) + "**"]
     out += ["", "---", "", "## 快速摘要", ""]
     for i, (h, ls) in enumerate(n["summary"], 1):
         out += [f"**{i}. {h}**", md_lines(ls), ""]
@@ -753,7 +788,7 @@ def note_md(n):
     return "\n".join(out)
 
 
-MD_NAMES = {"n1028-01": "1028-01-林友琴", "n1028-01b": "1028-01b-佐佐木康晴", "n1028-02": "1028-02-王俞蓉", "n1028-03": "1028-03-Bharat-Avalani", "n1028-04": "1028-04-Fredrik-Borestrom", "n1028-05": "1028-05-Linda-Hollebeek", "n1028-06": "1028-06-Sergey-Efimov", "n1028-07": "1028-07-楊立偉", "n1028-08": "1028-08-夏浩文", "n1028-09": "1028-09-Muhammad-Nafeezul-Bari", "n1029-01": "1029-01-Sulin-Lau"}
+MD_NAMES = {"n1028-01": "1028-01-林友琴", "n1028-01b": "1028-01b-佐佐木康晴", "n1028-02": "1028-02-王俞蓉", "n1028-03": "1028-03-Bharat-Avalani", "n1028-04": "1028-04-Fredrik-Borestrom", "n1028-05": "1028-05-Linda-Hollebeek", "n1028-06": "1028-06-Sergey-Efimov", "n1028-07": "1028-07-楊立偉", "n1028-08": "1028-08-夏浩文", "n1028-09": "1028-09-Muhammad-Nafeezul-Bari", "n1029-01": "1029-01-Sulin-Lau", "n1029-02": "1029-02-Mahesh-Neelakantan"}
 (HERE / "md").mkdir(exist_ok=True)
 for n in NOTES:
     name = MD_NAMES.get(n["id"], n["id"])

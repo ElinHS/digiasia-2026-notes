@@ -191,3 +191,7 @@ td:first-child { font-weight: 500; white-space: nowrap; }
 
 /* original-language line under a quote */
 .q .orig { display: block; margin-top: 8px; font-family: var(--font-body); font-weight: 400; font-size: 15px; line-height: 1.6; color: var(--muted); }
+
+/* one-line conclusion at top of summary */
+.lead-q { margin: 0; padding: 16px 18px; border-left: 3px solid var(--accent); background: var(--surface); border-radius: 0 8px 8px 0; font-family: var(--font-display); font-weight: 700; font-size: 20px; line-height: 1.7; }
+.lead-q .eyebrow { margin-bottom: 4px; font-weight: 400; }
