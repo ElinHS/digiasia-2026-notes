@@ -134,6 +134,7 @@ OMD 用 AI 自動化報表，報表時間減少 90%。
 > 我們不只自動化了報表，也改變了人在流程中的角色。
 
 > LLM 的知識來自過去，但未來總會出現前所未有的變數。
+> 原文：LLM make conclusions based on the experience in the past, no one knows the future
 
 ---
 

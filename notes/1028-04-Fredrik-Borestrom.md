@@ -115,6 +115,7 @@
 ## 金句摘錄
 
 > 在 B2B，你賣的是職涯安全感。
+> 原文：Selling the decision-safety and career-security that Buying Groups want to buy.
 
 > 能為選擇辯護，比規格和 AI 模型更重要。
 
