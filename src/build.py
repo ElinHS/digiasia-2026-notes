@@ -24,7 +24,7 @@ SCHEDULE = {
         ("14:00–14:30", "焦點討論(II)：重塑新價值：AI 時代中小型廣告行銷業者的突圍之道", "主持：王冠翔｜與談：劉彥伯（CLICKFORCE）、陳岱旻（awoo）", ["n1029-05"]),
         ("14:30–14:50", "代理商的行銷 AI 轉型", "張志浩（麥肯）", ["n1029-03"]),
         ("14:50–15:10", "Precise Targeting with Geofencing", "Jay Kim（AAAZA）", ["n1029-04"]),
-        ("16:05–16:25", "YouTube Partner Sales 與 Criteo Commerce Data", "虞秉儒、張景翔", None),
+        ("16:05–16:25", "YouTube Partner Sales 與 Criteo Commerce Data", "虞秉儒（Criteo）、張景翔（潮網科技）", ["n1029-06"]),
         ("16:25–16:45", "臺灣文化科技的新命題", "劉俊裕（臺藝大）", None),
         ("16:45–17:05", "AI 能加速產量，但打動人心的仍是人的判斷", "湯昇榮（瀚草）", None),
         ("17:05–17:25", "當想像「即時上映」", "林家齊（夢想動畫）", None),
@@ -707,6 +707,48 @@ NOTES = [
 ]),
         ],
     },
+    {
+        "id": "n1029-06", "bio": ["張景翔：潮網科技 Managing Partner。潮網是 YouTube 的合作夥伴，也代理 CTV、OTT 和戶外通路的廣告版位。", "虞秉儒：Criteo 新加坡業務開發經理。Criteo 是以電商數據做廣告投放的廣告科技公司。"], "bio_src": "大會活動頁、講者自述",
+        "notice": ["此場為兩家公司的產品分享。", "本筆記把 Sales Kit 銷售資訊淡化，只留下工具背後的觀念。"],
+        "fw_label": "核心洞察", "fw_tag": "洞察",
+        "day": "10/29 THU", "time": "16:05–16:25",
+        "title": "潮網科技 YouTube Partner Sales 與 Criteo Commerce Data，打造線上成長引擎",
+        "speaker": "張景翔、虞秉儒", "role": "潮網科技（Wavenet）Managing Partner｜Criteo Singapore 業務開發經理",
+        "kicker": "",
+        "index": [("短期成交陷阱", "連品牌廣告都看最終轉換，品牌越來越難建立"), ("媒體碎片化", "消費者很難再完整走完行銷漏斗"),
+                  ("New TV", "大螢幕看 YouTube，行為越來越像傳統電視"), ("觀看情境", "品牌建立靠在對的時刻反覆接觸"), ("購買意圖訊號", "用電商行為數據，接住準備購買的人")],
+        "summary": [
+            ("台灣這五年，很少有新品牌被記住", ["觀察：講者問台下，這五年台灣有哪些新品牌讓人留下深刻記憶？除了少數品類或代言人，很難想到。", "推測：品牌比以前更難建立。"]),
+            ("連品牌廣告，都在看最終轉換", ["觀察：社群媒體和精準廣告主導市場，廣告主越來越追求即時轉換（last click）。", "推測：品牌廣告已經淪為效果廣告，廣告主陷入短期成交陷阱，品牌的長期價值累積不起來。"]),
+            ("媒體碎片化，消費者很難走完漏斗", ["觀察：以前有大眾媒體、報章雜誌，現在注意力分散在各種 App 和平台。", "推測：傳統的 above the line、below the line 傳播方法已經不完全適用。"]),
+            ("大螢幕 YouTube，越來越像傳統電視", ["觀察：57% 的使用者偏好用大螢幕看 YouTube；過去三年，用聯網電視看 YouTube 的時數成長超過 3 倍，每天超過 3 小時。", "推測：大螢幕上的觀看行為（全家一起看、看長片）已經趨近傳統電視。"]),
+            ("電視沒有沒落，而是變成 New TV", ["觀察：電視台也在進行數位轉型。", "推測：電視進入「New TV」時代，結合了傳統媒體的影響力和數位的互動。"]),
+        ],
+        "frameworks": [
+            ("品牌為什麼越來越難建立", [("table", ["問題", "現象", "結果"], [["短期成交陷阱", "預算和 KPI 都偏向點擊、轉換", "品牌廣告變成效果廣告，長期價值累積不起來"], ["媒體碎片化", "注意力分散在社群、影音、App", "單一媒體覆蓋大眾的做法失效，多觸點難以維持一致的品牌訊息"]]),
+                                     ("img", "6285", "廣告主面臨的核心難題")]),
+            ("大螢幕 YouTube 的三個特性", [("table", ["特性", "講者提供的數據"], [["共視", "全家在大螢幕前一起看，不是個人行為；57% 的使用者偏好用大螢幕看"], ["互動", "90% 的用戶會按讚、訂閱、開小鈴鐺或留言"], ["長影音", "超過 65% 的大螢幕用戶單次觀看超過 21 分鐘，以美食、旅遊、影劇為主"]]),
+                                        ("p", ["講者也提到：過去三年，台灣用戶用聯網電視（CTV）看 YouTube 的時數成長超過 3 倍，每天超過 3 小時。"])]),
+            ("New TV 的四個優勢", [("table", ["優勢", "說明"], [["大眾觸及", "簡報寫成年網民近 95% 是 YouTube 受眾，並橫跨手機和客廳大螢幕"], ["多元影音與互動", "短影音、長影音、直播都有"], ["品牌影響力累積", "可以像電視一樣用收視率來評估，而不只看點擊"], ["數據與工具", "可設定受眾、用 AI 優化素材，並規劃跨媒體的觸及"]]),
+                                  ("img", "6286", "YouTube 作為「New TV 新電視」的優勢")]),
+            ("依情境排列的全漏斗（筆記整理）", [("p", ["講者用自家代理的通路說明全漏斗。拿掉業者名稱後，背後的邏輯是：依消費者一天的情境安排接觸點。"]),
+                                             ("table", ["情境", "接觸點類型", "漏斗位置"], [["在客廳", "CTV、OTT 上的影音廣告", "上層：建立品牌記憶"], ["在移動中", "車機、叫車 App", "中層：反覆提醒"], ["在零售現場", "便利商店等通路螢幕", "中下層：最後一哩的提醒"], ["在線上", "網站、電商的再行銷", "下層：接住購買意圖"]])]),
+            ("電商數據看的五種購買意圖訊號（筆記整理）", [("p", ["Criteo 的簡報列出它用來判斷消費者意圖的數據類型。"]),
+                                                     ("table", ["訊號", "說明"], [["搜尋過的商品", "在電商、零售、媒體網站上的購物搜尋"], ["看過的內容", "在合作媒體上閱讀的頁面"], ["廣告互動", "對廣告的點擊和互動"], ["看過的商品", "瀏覽過的商品頁"], ["買過的商品", "實際的購買紀錄"]]),
+                                                     ("p", ["這些訊號越靠近購買，越適合用在漏斗下層的轉換。"]),
+                                                     ("img", "6282", "Criteo 電商數據協助品牌網站達成廣告目標")]),
+        ],
+        "quotes": [],
+        "cases": [],
+        "actions": [
+            ("媒體企劃", [["品牌預算和效果預算分開設定 KPI：", "品牌廣告看觸及、頻次、品牌指標，不要用最終轉換來評估。"],
+                         ["把「大螢幕 YouTube」當成電視來規劃：", "評估家庭共視、長影音內容，並用類似收視率的指標衡量。"],
+                         ["用「一天的情境」排媒體：客廳、移動中、零售現場、線上，", "檢查每個情境有沒有接觸點、訊息是否一致。"],
+                         ["漏斗下層的再行銷，優先使用越接近購買的訊號，", "例如看過商品、加入購物車，而不只是看過廣告。"]]),
+            ("客戶服務", [["提案時用「品牌越來越難建立的兩個原因」和客戶溝通：", "說明只追求即時轉換的長期風險，爭取品牌預算。"]]),
+            ("數據", [["盤點客戶手上的購買意圖數據：搜尋、瀏覽、購買紀錄，", "評估能不能直接用在再行銷。", "正式決策前，仍要用真實數據驗證。"]]),
+        ],
+    },
 ]
 
 NOTE_BY_ID = {n["id"]: n for n in NOTES}
@@ -763,14 +805,16 @@ SECTIONS = [("summary", "快速摘要"), ("frameworks", "核心框架"), ("quote
 
 def note_view(n, prev_n, next_n):
     sid = n["id"]
-    secs_list = [(k, l) for k, l in SECTIONS if n.get(k)] + ([("extra", "延伸補充")] if n.get("extra") else [])
+    secs_list = [(k, n.get("fw_label", l) if k == "frameworks" else l) for k, l in SECTIONS if n.get(k)] + ([("extra", "延伸補充")] if n.get("extra") else [])
     nav = "".join(f'<a href="#{sid}" data-jump="{sid}-{k}">{E(lbl)}</a>' for k, lbl in secs_list)
     idx = "".join(f'<li><b>{E(k)}</b><span>{E(v)}</span></li>' for k, v in n["index"])
     bio = ""
     if n.get("bio"):
         bio = f'<div class="head-bio"><span class="eyebrow">{E(n.get("bio_label", "講者背景"))}</span><p>{lines(n["bio"])}</p><p class="src">資料來源：{E(n.get("bio_src",""))}</p></div>'
+    if n.get("notice"):
+        bio += f'<div class="head-bio notice"><span class="eyebrow">📌 筆記說明</span><p>{lines(n["notice"])}</p></div>'
     summary = (f'<p class="lead-q"><span class="eyebrow">一句話結論</span>{lines(n["lead"])}</p>' if n.get("lead") else "") + "".join(f'<div class="sum"><span class="num">{i}</span><div><h3>{E(h)}</h3><p>{lines(ls)}</p></div></div>' for i, (h, ls) in enumerate(n["summary"], 1))
-    fw = "".join(block(b) for b in n.get("fw_top", [])) + "".join(f'<div class="fw"><h3><span class="tag">框架{"一二三四五六七八"[i]}</span>{E(t)}</h3>' + "".join(block(b) for b in bs) + "</div>" for i, (t, bs) in enumerate(n["frameworks"]))
+    fw = "".join(block(b) for b in n.get("fw_top", [])) + "".join(f'<div class="fw"><h3><span class="tag">{E(n.get("fw_tag", "框架"))}{"一二三四五六七八"[i]}</span>{E(t)}</h3>' + "".join(block(b) for b in bs) + "</div>" for i, (t, bs) in enumerate(n["frameworks"]))
     quotes = "".join(f'<blockquote class="q">{lines([x for x in q if not x.startswith("原文：")])}' + "".join(f'<span class="orig">{E(x)}</span>' for x in q if x.startswith("原文：")) + '</blockquote>' for q in n["quotes"])
     cases = "".join(f'<div class="case"><h3>{E(t)}</h3>' + "".join(block(b) for b in bs) + "</div>" for t, bs in n["cases"])
     acts = "".join(f'<div class="act"><h3><span class="role">{E(r)}</span></h3><ul>' + "".join(f"<li>{lines(it)}</li>" for it in items) + "</ul></div>" for r, items in n["actions"])
@@ -885,6 +929,8 @@ def note_md(n):
         out.append(f"（{n['kicker']}）")
     if n.get("bio"):
         out += ["", "> " + n.get("bio_label", "講者背景")] + [f"> {x}" for x in n["bio"]] + [f"> （資料來源：{n.get('bio_src','')}）"]
+    if n.get("notice"):
+        out += ["", "---", "", "> **📌 筆記說明**"] + [f"> {x}" for x in n["notice"]]
     if n["index"]:
         out += ["", "---", "", "## Keyword summary", "", "| 關鍵詞 | 說明 |", "|---|---|"] + [f"| {k} | {v} |" for k, v in n["index"]]
     if n.get("lead"):
@@ -893,12 +939,13 @@ def note_md(n):
     for i, (h, ls) in enumerate(n["summary"], 1):
         out += [f"**{i}. {h}**", md_lines(ls), ""]
     if n["frameworks"]:
-        out += ["---", "", "## 核心框架", ""] + sum(([md_block(b), ""] for b in n.get("fw_top", [])), [])
+        out += ["---", "", "## " + n.get("fw_label", "核心框架"), ""] + sum(([md_block(b), ""] for b in n.get("fw_top", [])), [])
     for i, (t, bs) in enumerate(n["frameworks"]):
-        out += [f"**框架{'一二三四五六七八'[i]}：{t}**", ""]
+        out += [f"**{n.get('fw_tag', '框架')}{'一二三四五六七八'[i]}：{t}**", ""]
         for b in bs:
             out += [md_block(b), ""]
-    out += ["---", "", "## 金句摘錄", ""]
+    if n["quotes"]:
+        out += ["---", "", "## 金句摘錄", ""]
     for q in n["quotes"]:
         out += ["> " + "".join(x for x in q if not x.startswith("原文："))] + ["> " + x for x in q if x.startswith("原文：")] + [""]
     if n["cases"]:
@@ -920,7 +967,7 @@ def note_md(n):
     return "\n".join(out)
 
 
-MD_NAMES = {"n1028-01": "1028-01-林友琴", "n1028-01b": "1028-01b-佐佐木康晴", "n1028-02": "1028-02-王俞蓉", "n1028-03": "1028-03-Bharat-Avalani", "n1028-04": "1028-04-Fredrik-Borestrom", "n1028-05": "1028-05-Linda-Hollebeek", "n1028-06": "1028-06-Sergey-Efimov", "n1028-07": "1028-07-楊立偉", "n1028-08": "1028-08-夏浩文", "n1028-09": "1028-09-Muhammad-Nafeezul-Bari", "n1029-01": "1029-01-Sulin-Lau", "n1029-02": "1029-02-Mahesh-Neelakantan", "n1029-03": "1029-03-張志浩", "n1029-04": "1029-04-Jay-Kim", "n1029-05": "1029-05-焦點討論II"}
+MD_NAMES = {"n1028-01": "1028-01-林友琴", "n1028-01b": "1028-01b-佐佐木康晴", "n1028-02": "1028-02-王俞蓉", "n1028-03": "1028-03-Bharat-Avalani", "n1028-04": "1028-04-Fredrik-Borestrom", "n1028-05": "1028-05-Linda-Hollebeek", "n1028-06": "1028-06-Sergey-Efimov", "n1028-07": "1028-07-楊立偉", "n1028-08": "1028-08-夏浩文", "n1028-09": "1028-09-Muhammad-Nafeezul-Bari", "n1029-01": "1029-01-Sulin-Lau", "n1029-02": "1029-02-Mahesh-Neelakantan", "n1029-03": "1029-03-張志浩", "n1029-04": "1029-04-Jay-Kim", "n1029-05": "1029-05-焦點討論II", "n1029-06": "1029-06-張景翔-虞秉儒"}
 (HERE / "md").mkdir(exist_ok=True)
 for n in NOTES:
     name = MD_NAMES.get(n["id"], n["id"])

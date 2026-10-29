@@ -195,3 +195,7 @@ td:first-child { font-weight: 500; white-space: nowrap; }
 /* one-line conclusion at top of summary */
 .lead-q { margin: 0; padding: 16px 18px; border-left: 3px solid var(--accent); background: var(--surface); border-radius: 0 8px 8px 0; font-family: var(--font-display); font-weight: 700; font-size: 20px; line-height: 1.7; }
 .lead-q .eyebrow { margin-bottom: 4px; font-weight: 400; }
+
+/* note-level disclaimer callout */
+.head-bio.notice { border-color: var(--accent); border-left-width: 3px; }
+.head-bio.notice p { font-weight: 500; }
