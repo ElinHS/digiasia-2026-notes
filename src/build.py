@@ -21,10 +21,9 @@ SCHEDULE = {
     "1029": ("10/29", "THU", [
         ("10:30–11:00", "沒有 AI，靈魂放不大", "Sulin Lau（Grab）", ["n1029-01"]),
         ("11:00–11:30", "Becoming Frontier：Agentic AI Transformation", "Mahesh Neelakantan（Microsoft）", ["n1029-02"]),
-        ("14:00–14:30", "焦點討論(II)：AI 時代中小型廣告行銷業者的突破之道", "主持：王冠翔", None),
+        ("14:00–14:30", "焦點討論(II)：重塑新價值：AI 時代中小型廣告行銷業者的突圍之道", "主持：王冠翔｜與談：劉彥伯（CLICKFORCE）、陳岱旻（awoo）", ["n1029-05"]),
         ("14:30–14:50", "代理商的行銷 AI 轉型", "張志浩（麥肯）", ["n1029-03"]),
         ("14:50–15:10", "Precise Targeting with Geofencing", "Jay Kim（AAAZA）", ["n1029-04"]),
-        ("15:10–15:30", "用 AI 引領，每天更懂你", "蔣仲閔（Yahoo）", None),
         ("15:45–16:05", "The Right Thing at the Right Moment", "Sam Lam（Roctec）", None),
         ("16:05–16:25", "YouTube Partner Sales 與 Criteo Commerce Data", "虞秉儒、張景翔", None),
         ("16:25–16:45", "臺灣文化科技的新命題", "劉俊裕（臺藝大）", None),
@@ -591,6 +590,32 @@ NOTES = [
         ],
     },
     {
+        "id": "n1029-05", "bio": ["主持：王冠翔｜台灣數位媒體應用暨行銷協會 理事長、dentsu X 貝立德 總經理", "與談：劉彥伯（Mike）｜CLICKFORCE 域動行銷 產品長", "與談：陳岱旻（Angeline）｜awoo 阿物科技 行銷副總"], "bio_src": "大會活動頁", "bio_label": "主持與與談人",
+        "day": "10/29 THU", "time": "14:00–14:30",
+        "title": "重塑新價值：AI 時代中小型廣告行銷業者的突圍之道",
+        "speaker": "焦點討論(II)", "role": "主持：王冠翔｜與談：劉彥伯、陳岱旻",
+        "kicker": "對談場次，只整理快速摘要、金句摘錄和行動清單",
+        "index": [],
+        "summary": [
+            ("先讓全公司學會做自己的 AI 代理", ["劉彥伯說，CLICKFORCE 去年 11 月要求整個產品處，花 8 週學會用 AI 做自己的 agent。", "由兩位先研究的主管當種子教官，帶 PM、UI、UX、RD 等跨部門的人一起做。", "8 週後，非工程背景的人也能做出小工具：", "・UX：用 Figma 擴充功能，快速更新幾十個頁面的模組", "・HRBP：做出職缺說明（JD）產生器", "・QA：用 Playwright 寫自動化測試"]),
+            ("後勤單位最需要 AI", ["開發需求通常分 P0 到 P3。業務需求永遠排最前面，財務、法務、人資永遠排在最後。", "這些人每天手動搬 Word、Excel 報表，優化師甚至要看 100 張表盯廣告活動。", "讓他們自己做工具，整間公司的營運效率才會提升。"]),
+            ("寫工具前，先整理流程和資料", ["陳岱旻建議從文案這類文字工作開始，因為大型語言模型最擅長處理文字。", "動手之前先做規劃。她說規劃應該佔整個專案時程的 4 到 6 成，之後才是開發和測試。"]),
+            ("快和安全，要拿捏平衡", ["劉彥伯最擔心的，是大家把財務、營收資料全部丟給 AI。", "要先確認安全性和資料管理，再決定哪些資料可以給 AI、哪些要留在公司自己的地端 AI。"]),
+            ("中小型業者的突圍：對內整流程，對外拉高門檻", ["王冠翔總結：AI 降低了執行的門檻，業者就要拉高創造價值的門檻。", "內部使用者也是內部客戶。內部流程沒整理好，就像「十人十一腳」，站都站不穩。"]),
+        ],
+        "frameworks": [],
+        "quotes": [["AI 降低了執行的門檻，", "我們更要拉高創造價值的門檻。", "——王冠翔"],
+                   ["在寫工具之前，最重要的是先梳理流程與資料，", "而不是急著動手。", "——陳岱旻"]],
+        "cases": [],
+        "actions": [
+            ("媒體企劃", [["列出每週最花時間的報表工作，例如整理投放數據、盯多個平台的成效表。", "挑一項，試著用 AI 做成自動化工具。"],
+                         ["先從文字工作開始用 AI：提案文字、結案摘要、廣編文初稿。", "這些比生成複雜報表更容易做出成果。"]]),
+            ("全體", [["挑一個流程，先花時間把步驟和資料整理清楚，再動手做工具。", "規劃大約要佔專案時程的 4 到 6 成。"],
+                      ["建立資料使用規則：哪些資料可以丟給 AI，哪些不行，", "例如財務、營收、客戶資料。"],
+                      ["找出團隊裡已經在研究 AI 的人，請他們當種子教官，", "用幾週時間帶大家各做一個自己的工具。"]]),
+        ],
+    },
+    {
         "id": "n1029-03", "bio": ["台灣麥肯行銷傳播集團董事長暨執行長，2018 年加入麥肯。", "之前在奧美 23 年，離開前是 OgilvyOne 台灣董事總經理，也負責亞太區業務開發。", "在大學教行銷和數位行銷超過 20 年。"], "bio_src": "Marketing-Interactive 2018 年報導、旺得富 2026 年報導、講者自述",
         "day": "10/29 THU", "time": "14:30–14:50",
         "title": "代理商的行銷 AI 轉型",
@@ -739,12 +764,12 @@ SECTIONS = [("summary", "快速摘要"), ("frameworks", "核心框架"), ("quote
 
 def note_view(n, prev_n, next_n):
     sid = n["id"]
-    secs_list = SECTIONS + ([("extra", "延伸補充")] if n.get("extra") else [])
+    secs_list = [(k, l) for k, l in SECTIONS if n.get(k)] + ([("extra", "延伸補充")] if n.get("extra") else [])
     nav = "".join(f'<a href="#{sid}" data-jump="{sid}-{k}">{E(lbl)}</a>' for k, lbl in secs_list)
     idx = "".join(f'<li><b>{E(k)}</b><span>{E(v)}</span></li>' for k, v in n["index"])
     bio = ""
     if n.get("bio"):
-        bio = f'<div class="head-bio"><span class="eyebrow">講者背景</span><p>{lines(n["bio"])}</p><p class="src">資料來源：{E(n.get("bio_src",""))}</p></div>'
+        bio = f'<div class="head-bio"><span class="eyebrow">{E(n.get("bio_label", "講者背景"))}</span><p>{lines(n["bio"])}</p><p class="src">資料來源：{E(n.get("bio_src",""))}</p></div>'
     summary = (f'<p class="lead-q"><span class="eyebrow">一句話結論</span>{lines(n["lead"])}</p>' if n.get("lead") else "") + "".join(f'<div class="sum"><span class="num">{i}</span><div><h3>{E(h)}</h3><p>{lines(ls)}</p></div></div>' for i, (h, ls) in enumerate(n["summary"], 1))
     fw = "".join(block(b) for b in n.get("fw_top", [])) + "".join(f'<div class="fw"><h3><span class="tag">框架{"一二三四五六七八"[i]}</span>{E(t)}</h3>' + "".join(block(b) for b in bs) + "</div>" for i, (t, bs) in enumerate(n["frameworks"]))
     quotes = "".join(f'<blockquote class="q">{lines([x for x in q if not x.startswith("原文：")])}' + "".join(f'<span class="orig">{E(x)}</span>' for x in q if x.startswith("原文：")) + '</blockquote>' for q in n["quotes"])
@@ -771,7 +796,7 @@ def note_view(n, prev_n, next_n):
   <nav class="tabs"><div class="wrap">{nav}</div></nav>
   <div class="wrap note-grid">
     <aside class="side">
-      <div class="idx"><span class="eyebrow">Keyword summary</span><ul>{idx}</ul></div>
+      {f'<div class="idx"><span class="eyebrow">Keyword summary</span><ul>{idx}</ul></div>' if n["index"] else ""}
     </aside>
     <main class="content">{secs}{pager}</main>
   </div>
@@ -860,14 +885,16 @@ def note_md(n):
     if n.get("kicker"):
         out.append(f"（{n['kicker']}）")
     if n.get("bio"):
-        out += ["", "> 講者背景"] + [f"> {x}" for x in n["bio"]] + [f"> （資料來源：{n.get('bio_src','')}）"]
-    out += ["", "---", "", "## Keyword summary", "", "| 關鍵詞 | 說明 |", "|---|---|"] + [f"| {k} | {v} |" for k, v in n["index"]]
+        out += ["", "> " + n.get("bio_label", "講者背景")] + [f"> {x}" for x in n["bio"]] + [f"> （資料來源：{n.get('bio_src','')}）"]
+    if n["index"]:
+        out += ["", "---", "", "## Keyword summary", "", "| 關鍵詞 | 說明 |", "|---|---|"] + [f"| {k} | {v} |" for k, v in n["index"]]
     if n.get("lead"):
         out += ["", "---", "", "## 一句話結論", "", "**" + "".join(n["lead"]) + "**"]
     out += ["", "---", "", "## 快速摘要", ""]
     for i, (h, ls) in enumerate(n["summary"], 1):
         out += [f"**{i}. {h}**", md_lines(ls), ""]
-    out += ["---", "", "## 核心框架", ""] + sum(([md_block(b), ""] for b in n.get("fw_top", [])), [])
+    if n["frameworks"]:
+        out += ["---", "", "## 核心框架", ""] + sum(([md_block(b), ""] for b in n.get("fw_top", [])), [])
     for i, (t, bs) in enumerate(n["frameworks"]):
         out += [f"**框架{'一二三四五六七八'[i]}：{t}**", ""]
         for b in bs:
@@ -875,7 +902,8 @@ def note_md(n):
     out += ["---", "", "## 金句摘錄", ""]
     for q in n["quotes"]:
         out += ["> " + "".join(x for x in q if not x.startswith("原文："))] + ["> " + x for x in q if x.startswith("原文：")] + [""]
-    out += ["---", "", "## 案例故事", ""]
+    if n["cases"]:
+        out += ["---", "", "## 案例故事", ""]
     for t, bs in n["cases"]:
         out += [f"**{t}**"]
         for b in bs:
@@ -893,7 +921,7 @@ def note_md(n):
     return "\n".join(out)
 
 
-MD_NAMES = {"n1028-01": "1028-01-林友琴", "n1028-01b": "1028-01b-佐佐木康晴", "n1028-02": "1028-02-王俞蓉", "n1028-03": "1028-03-Bharat-Avalani", "n1028-04": "1028-04-Fredrik-Borestrom", "n1028-05": "1028-05-Linda-Hollebeek", "n1028-06": "1028-06-Sergey-Efimov", "n1028-07": "1028-07-楊立偉", "n1028-08": "1028-08-夏浩文", "n1028-09": "1028-09-Muhammad-Nafeezul-Bari", "n1029-01": "1029-01-Sulin-Lau", "n1029-02": "1029-02-Mahesh-Neelakantan", "n1029-03": "1029-03-張志浩", "n1029-04": "1029-04-Jay-Kim"}
+MD_NAMES = {"n1028-01": "1028-01-林友琴", "n1028-01b": "1028-01b-佐佐木康晴", "n1028-02": "1028-02-王俞蓉", "n1028-03": "1028-03-Bharat-Avalani", "n1028-04": "1028-04-Fredrik-Borestrom", "n1028-05": "1028-05-Linda-Hollebeek", "n1028-06": "1028-06-Sergey-Efimov", "n1028-07": "1028-07-楊立偉", "n1028-08": "1028-08-夏浩文", "n1028-09": "1028-09-Muhammad-Nafeezul-Bari", "n1029-01": "1029-01-Sulin-Lau", "n1029-02": "1029-02-Mahesh-Neelakantan", "n1029-03": "1029-03-張志浩", "n1029-04": "1029-04-Jay-Kim", "n1029-05": "1029-05-焦點討論II"}
 (HERE / "md").mkdir(exist_ok=True)
 for n in NOTES:
     name = MD_NAMES.get(n["id"], n["id"])
