@@ -654,7 +654,7 @@ NOTES = [
             ("CLAB Sphere 的產品概念", [("p", ["從「標籤」到「全景」：", "傳統受眾工具，常把人貼上單一標籤，例如「25–30 歲女性、喜歡美妝」。", "CLAB Sphere 提出「影響力全景」（Influence Panorama）：看見一個人在不同場域的樣貌，理解他如何被周遭的文化、語言和行為影響。"]),
                                        ("table", ["維度", "看什麼"], [["文化（Culture）", "受眾的價值觀、次文化圈，以及他們的母語和圈內用語，讓品牌用「圈內人」的語言對話"], ["生活方式（Lifestyle）", "讓受眾投入的生活場景，例如健康養生、都會社交、年輕家庭"], ["行為（Behavior）", "受眾實際的行動和消費路徑，把意圖轉成可預測的行為模式"], ["地點（Geography）", "文化據點、社群聚集的場所，以及受眾實際出現的地方"]]),
                                        ("p", ["文化智慧引擎（Cultural Intelligence Engine）：", "系統不只告訴你受眾「在看什麼」，也解讀「為什麼看」，以及引發共鳴的心理機制。", "可作為全球化或在地化行銷策略的決策參考。"]),
-                                       ("aside", ["資料來源：CLAB Sphere 產品網頁"]),
+                                       ("link", "資料來源：CLAB Sphere 產品網頁 ", "https://clabsphere.com/"),
                                        ("img", "6274", "Culture + Lifestyle + Behavior")]),
         ],
         "quotes": [["重點不是觸及更多人，", "而是觸及更多對的人。", "原文：It's not about reaching more people. It's about reaching more of the right people."],
@@ -678,7 +678,7 @@ NOTES = [
         "extra": [
             ("Vpon 威朋 vs CLAB Sphere", [("aside", ["以下是筆記補充，比較台灣近似的服務廠商，資訊以兩家官網和公開報導為主"]),
                                          ("table", ["項目", "Vpon 威朋", "CLAB Sphere"], [["定位", "跨境數據公司，提供受眾數據和市場洞察", "文化智慧引擎，專做多元文化與小眾受眾"], ["受眾怎麼切", "App 偏好、地點、裝置、消費資料；300 多個預設分群", "文化、生活方式、行為、地點四層疊加"], ["地點數據用法", "人流熱點、移動路線、POI，用於展店選址與活動評估", "在特定地點畫地理圍欄，交叉比對同一裝置的足跡"], ["規模", "大：自述每月 9 億個不重複行動裝置", "小而精準"], ["投放", "併購塔圖科技後，可投放 Google、Meta、LINE、TikTok", "自家引擎投放"], ["線下轉換", "官網未直接寫到店追蹤", "有：在門市畫地理圍欄，追蹤走進來的人"], ["市場", "亞洲，以日本、台灣為主", "美國（講者案例）"]]),
-                                         ("aside", ["資料來源：Vpon 官網、數位時代 2026 年報導、CLAB Sphere 官網"])]),
+                                         ("aside", ["資料來源：Vpon 官網、數位時代 2026 年報導、CLAB Sphere 官網"]), ("link", "CLAB Sphere 官網：", "https://clabsphere.com/")]),
             ("和品牌主談地點型受眾時的限制", [("table", ["限制", "說明"], [["法規未明", "個資法 2025 年 11 月修正公布，施行日期另訂；位置資料用於行銷的界線，法規沒有明確規範"], ["去識別化有爭議", "NCC 認為去識別化後就是「數據」，人權團體主張位置足跡就是隱私，2024 年曾引發電信數據爭議"], ["需要用戶同意", "資料能識別到個人時，蒐集和利用都要告知並取得同意，用途要和告知目的相關"], ["手機系統限制", "iPhone 跨 App 追蹤和手機定位都要用戶授權，能追到的只是一部分用戶"], ["敏感地點", "宗教、醫療、抗議現場等地點，輿論與法律風險高；講者提到美國已不能對宗教場所做地理圍欄"], ["數據來源要問清楚", "請業者說明：數據從哪裡來、用戶是否同意、怎麼去識別化"]]),
 ]),
         ],
@@ -727,6 +727,8 @@ def block(b):
         return (f'<figure class="shot"><button type="button" class="zoom" aria-label="放大照片">'
                 f'<img loading="lazy" src="data:image/jpeg;base64,{data}" alt="{E(b[2])}"></button>'
                 f'<figcaption>現場簡報｜{E(b[2])}</figcaption></figure>')
+    if t == "link":
+        return f'<p class="aside">{E(b[1])}<a href="{E(b[2])}" target="_blank" rel="noopener">{E(b[2])}</a></p>'
     if t == "stats":
         return '<div class="stats">' + "".join(f'<div class="stat"><b>{E(n)}</b><span>{E(d)}</span></div>' for n, d in b[1]) + "</div>"
     raise ValueError(t)
@@ -848,6 +850,8 @@ def md_block(b):
         return "\n".join(f"- {n}：{d}" for n, d in b[1])
     if t == "img":
         return f"（現場簡報照片：{b[2]}）"
+    if t == "link":
+        return f"{b[1]}{b[2]}"
     return ""
 
 
