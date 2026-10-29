@@ -866,7 +866,6 @@ def home_view():
       <h1>講座筆記</h1>
       <p class="lede">每場筆記分成以下五個部分（省略部分場次）</p>
       <p class="tags"><span>#快速摘要</span><span>#核心框架</span><span>#金句摘錄</span><span>#案例故事</span><span>#行銷產業行動清單</span></p>
-      <p class="count"><span class="mono">{done}</span> 份筆記已整理，其餘場次陸續更新。</p>
     </div>
     <img class="hero-mark" src="{HERO_SRC}" alt="DIGIASIA 2026 HEARTIFICIAL Intelligent Marketing：用人心的溫度，成就無法被演算的感動">
   </div></header>
