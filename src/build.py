@@ -24,7 +24,6 @@ SCHEDULE = {
         ("14:00–14:30", "焦點討論(II)：重塑新價值：AI 時代中小型廣告行銷業者的突圍之道", "主持：王冠翔｜與談：劉彥伯（CLICKFORCE）、陳岱旻（awoo）", ["n1029-05"]),
         ("14:30–14:50", "代理商的行銷 AI 轉型", "張志浩（麥肯）", ["n1029-03"]),
         ("14:50–15:10", "Precise Targeting with Geofencing", "Jay Kim（AAAZA）", ["n1029-04"]),
-        ("15:45–16:05", "The Right Thing at the Right Moment", "Sam Lam（Roctec）", None),
         ("16:05–16:25", "YouTube Partner Sales 與 Criteo Commerce Data", "虞秉儒、張景翔", None),
         ("16:25–16:45", "臺灣文化科技的新命題", "劉俊裕（臺藝大）", None),
         ("16:45–17:05", "AI 能加速產量，但打動人心的仍是人的判斷", "湯昇榮（瀚草）", None),
