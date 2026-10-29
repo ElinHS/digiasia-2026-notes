@@ -656,7 +656,7 @@ NOTES = [
         "day": "10/29 THU", "time": "14:50–15:10",
         "title": "Precise Targeting with Geofencing: Lifestyle and Culture",
         "speaker": "Jay Kim", "role": "AAAZA 董事總經理",
-        "kicker": "以自家工具 CLAB Sphere™ 的案例分享",
+        "kicker": "MarTech 領域｜以自家工具 CLAB Sphere™ 的案例分享",
         "index": [("地理圍欄", "在特定地點畫出範圍，鎖定曾經到過那裡的裝置"), ("CLAB", "文化、生活方式、行為（Culture, Lifestyle, And Behavior）"),
                   ("熱情點", "讓人投入的文化、生活和行為場景"), ("對的人", "不是觸及更多人，而是觸及更多對的人"), ("用他的語言", "用母語溝通，才能打動人心")],
         "fw_top": [("img", "6271", "It's not about reaching more people. It's about reaching more of the right people.")],
