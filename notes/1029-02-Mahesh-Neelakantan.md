@@ -46,9 +46,9 @@ AI 成熟度分三階段：個人助理 → AI 代理參與的流程 → 人主�
 
 ## 核心框架
 
-**框架一：代理式購物三階段**
-
 （現場簡報照片：Frontier is not having the most AI tools. It is redesigning how work gets done.）
+
+**框架一：代理式購物三階段**
 
 | 階段 | AI 做什麼 | 品牌要準備什麼（筆記補充） |
 |---|---|---|

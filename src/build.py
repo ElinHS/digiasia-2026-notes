@@ -564,6 +564,7 @@ NOTES = [
         "title": "Becoming Frontier：Agentic AI Transformation",
         "speaker": "Mahesh Neelakantan", "role": "Microsoft 零售與消費品產業總監",
         "kicker": "",
+        "fw_top": [("img", "6261", "Frontier is not having the most AI tools. It is redesigning how work gets done.")],
         "lead": ["品牌的下一個接觸點是 AI 代理。", "誰被 AI 推薦，誰就被買。"],
         "index": [("Frontier 企業", "把 AI 當作業系統，重新設計工作"), ("代理式 AI", "AI 串起整條流程，自動跑完"),
                   ("目標式購物", "先說需求，AI 完成購買"), ("GEO", "讓品牌被 AI 助理推薦")],
@@ -573,8 +574,7 @@ NOTES = [
             ("SEO 之後是 GEO", ["消費者會問 ChatGPT 該買哪個品牌。", "品牌要知道 AI 怎麼回答。"]),
         ],
         "frameworks": [
-            ("代理式購物三階段", [("img", "6261", "Frontier is not having the most AI tools. It is redesigning how work gets done."),
-                                 ("table", ["階段", "AI 做什麼", "品牌要準備什麼（筆記補充）"], [["幫我找", "搜尋、整理", "讓商品資訊被 AI 讀得到"], ["幫我選", "依條件選出最佳", "在 AI 的回答裡被推薦"], ["幫我做", "拿到需求和付款資料，完成交易", "結帳流程能讓 AI 代理完成"]])]),
+            ("代理式購物三階段", [("table", ["階段", "AI 做什麼", "品牌要準備什麼（筆記補充）"], [["幫我找", "搜尋、整理", "讓商品資訊被 AI 讀得到"], ["幫我選", "依條件選出最佳", "在 AI 的回答裡被推薦"], ["幫我做", "拿到需求和付款資料，完成交易", "結帳流程能讓 AI 代理完成"]])]),
         ],
         "quotes": [["Frontier 不是擁有最多 AI 工具，", "而是重新設計工作的方式。", "原文：Frontier is not having the most AI tools. It is redesigning how work gets done."],
                    ["品牌的接觸點，不再只是廣告、門市或業務員，", "而是 AI 代理。", "原文：With your brand, the touchpoint is no longer just an ad, a store, or a salesperson; it is actually an agent."]],
@@ -650,7 +650,7 @@ def note_view(n, prev_n, next_n):
     if n.get("bio"):
         bio = f'<div class="head-bio"><span class="eyebrow">講者背景</span><p>{lines(n["bio"])}</p><p class="src">資料來源：{E(n.get("bio_src",""))}</p></div>'
     summary = (f'<p class="lead-q"><span class="eyebrow">一句話結論</span>{lines(n["lead"])}</p>' if n.get("lead") else "") + "".join(f'<div class="sum"><span class="num">{i}</span><div><h3>{E(h)}</h3><p>{lines(ls)}</p></div></div>' for i, (h, ls) in enumerate(n["summary"], 1))
-    fw = "".join(f'<div class="fw"><h3><span class="tag">框架{"一二三四五六七八"[i]}</span>{E(t)}</h3>' + "".join(block(b) for b in bs) + "</div>" for i, (t, bs) in enumerate(n["frameworks"]))
+    fw = "".join(block(b) for b in n.get("fw_top", [])) + "".join(f'<div class="fw"><h3><span class="tag">框架{"一二三四五六七八"[i]}</span>{E(t)}</h3>' + "".join(block(b) for b in bs) + "</div>" for i, (t, bs) in enumerate(n["frameworks"]))
     quotes = "".join(f'<blockquote class="q">{lines([x for x in q if not x.startswith("原文：")])}' + "".join(f'<span class="orig">{E(x)}</span>' for x in q if x.startswith("原文：")) + '</blockquote>' for q in n["quotes"])
     cases = "".join(f'<div class="case"><h3>{E(t)}</h3>' + "".join(block(b) for b in bs) + "</div>" for t, bs in n["cases"])
     acts = "".join(f'<div class="act"><h3><span class="role">{E(r)}</span></h3><ul>' + "".join(f"<li>{lines(it)}</li>" for it in items) + "</ul></div>" for r, items in n["actions"])
@@ -768,7 +768,7 @@ def note_md(n):
     out += ["", "---", "", "## 快速摘要", ""]
     for i, (h, ls) in enumerate(n["summary"], 1):
         out += [f"**{i}. {h}**", md_lines(ls), ""]
-    out += ["---", "", "## 核心框架", ""]
+    out += ["---", "", "## 核心框架", ""] + sum(([md_block(b), ""] for b in n.get("fw_top", [])), [])
     for i, (t, bs) in enumerate(n["frameworks"]):
         out += [f"**框架{'一二三四五六七八'[i]}：{t}**", ""]
         for b in bs:
