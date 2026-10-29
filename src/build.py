@@ -20,8 +20,6 @@ SCHEDULE = {
     ]),
     "1029": ("10/29", "THU", [
         ("10:30–11:00", "沒有 AI，靈魂放不大", "Sulin Lau（Grab）", ["n1029-01"]),
-        ("11:00–11:30", "Becoming Frontier：Agentic AI Transformation", "Mahesh Neelakantan（Microsoft）", None),
-        ("11:30–12:00", "AI 時代的挑戰：建構詐騙聯防網，重建數位信任", "主持：盧諭緯", None),
         ("14:00–14:30", "焦點討論(II)：AI 時代中小型廣告行銷業者的突破之道", "主持：王冠翔", None),
         ("14:30–14:50", "代理商的行銷 AI 轉型", "張志浩（麥肯）", None),
         ("14:50–15:10", "Precise Targeting with Geofencing", "Jay Kim（AAAZA）", None),
