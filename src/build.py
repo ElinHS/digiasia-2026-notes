@@ -573,8 +573,8 @@ NOTES = [
             ("SEO 之後是 GEO", ["消費者會問 ChatGPT 該買哪個品牌。", "品牌要知道 AI 怎麼回答。"]),
         ],
         "frameworks": [
-            ("代理式購物三階段", [("table", ["階段", "AI 做什麼", "品牌要準備什麼（筆記補充）"], [["幫我找", "搜尋、整理", "讓商品資訊被 AI 讀得到"], ["幫我選", "依條件選出最佳", "在 AI 的回答裡被推薦"], ["幫我做", "拿到需求和付款資料，完成交易", "結帳流程能讓 AI 代理完成"]]),
-                                 ("img", "6261", "Frontier is not having the most AI tools. It is redesigning how work gets done.")]),
+            ("代理式購物三階段", [("img", "6261", "Frontier is not having the most AI tools. It is redesigning how work gets done."),
+                                 ("table", ["階段", "AI 做什麼", "品牌要準備什麼（筆記補充）"], [["幫我找", "搜尋、整理", "讓商品資訊被 AI 讀得到"], ["幫我選", "依條件選出最佳", "在 AI 的回答裡被推薦"], ["幫我做", "拿到需求和付款資料，完成交易", "結帳流程能讓 AI 代理完成"]])]),
         ],
         "quotes": [["Frontier 不是擁有最多 AI 工具，", "而是重新設計工作的方式。", "原文：Frontier is not having the most AI tools. It is redesigning how work gets done."],
                    ["品牌的接觸點，不再只是廣告、門市或業務員，", "而是 AI 代理。", "原文：With your brand, the touchpoint is no longer just an ad, a store, or a salesperson; it is actually an agent."]],
