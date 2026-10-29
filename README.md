@@ -22,6 +22,7 @@ DIGIASIA 2026 數位亞洲大會（10/28–10/29，台北）講座筆記，同�
 | 10/29 | 10:30–11:00 | Sulin Lau（Grab） | Scale with Soul（沒有 AI，靈魂放不大） |
 | 10/29 | 11:00–11:30 | Mahesh Neelakantan（Microsoft） | Becoming Frontier：Agentic AI Transformation |
 | 10/29 | 14:30–14:50 | 張志浩（麥肯） | 代理商的行銷 AI 轉型 |
+| 10/29 | 14:50–15:10 | Jay Kim（AAAZA） | Precise Targeting with Geofencing: Lifestyle and Culture |
 
 其餘場次陸續更新。
 
