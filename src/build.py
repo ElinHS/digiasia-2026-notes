@@ -679,6 +679,14 @@ NOTES = [
             ("創意", [["鎖定特定文化或社群時，用他們自己的語言和場景寫文案，不要只是翻譯。"]]),
             ("數據", [["盤點客戶手上的門市、活動和據點資料，評估能不能做成地點型受眾。", "正式決策前，仍要用真實數據驗證。"]]),
         ],
+        "extra": [
+            ("Vpon 威朋 vs CLAB Sphere", [("aside", ["以下是筆記補充，不是講者說的內容。比較依據兩家官網和公開報導，沒有實際測試或詢問業者。"]),
+                                         ("table", ["項目", "Vpon 威朋", "CLAB Sphere"], [["定位", "跨境數據公司，提供受眾數據和市場洞察", "文化智慧引擎，專做多元文化與小眾受眾"], ["受眾怎麼切", "App 偏好、地點、裝置、消費資料；300 多個預設分群", "文化、生活方式、行為、地點四層疊加"], ["地點數據用法", "人流熱點、移動路線、POI，用於展店選址與活動評估", "在特定地點畫地理圍欄，交叉比對同一裝置的足跡"], ["規模", "大：自述每月 9 億個不重複行動裝置", "小而精準"], ["投放", "併購塔圖科技後，可投放 Google、Meta、LINE、TikTok", "自家引擎投放"], ["線下轉換", "官網未直接寫到店追蹤", "有：在門市畫地理圍欄，追蹤走進來的人"], ["市場", "亞洲，以日本、台灣為主", "美國（講者案例）"]]),
+                                         ("aside", ["資料來源：Vpon 官網、數位時代 2026 年報導、CLAB Sphere 官網"])]),
+            ("和品牌主談地點型受眾時的限制", [("table", ["限制", "說明"], [["法規未明", "個資法 2025 年 11 月修正公布，施行日期另訂；位置資料用於行銷的界線，法規沒有明確規範"], ["去識別化有爭議", "NCC 認為去識別化後就是「數據」，人權團體主張位置足跡就是隱私，2024 年曾引發電信數據爭議"], ["需要用戶同意", "資料能識別到個人時，蒐集和利用都要告知並取得同意，用途要和告知目的相關"], ["手機系統限制", "iPhone 跨 App 追蹤和手機定位都要用戶授權，能追到的只是一部分用戶"], ["敏感地點", "宗教、醫療、抗議現場等地點，輿論與法律風險高；講者提到美國已不能對宗教場所做地理圍欄"], ["數據來源要問清楚", "請業者說明：數據從哪裡來、用戶是否同意、怎麼去識別化"]]),
+                                          ("p", ["風險由低到高：", "Google、Meta 的地點與半徑投放 → 向數據公司購買地點受眾包 → 鎖定敏感地點。"]),
+                                          ("aside", ["以上不是法律意見，執行前請法務或律師確認。資料來源：今周刊 2024 年報導、新頭殼、台灣人權促進會、理律法律事務所、PwC。"])]),
+        ],
     },
 ]
 
@@ -734,7 +742,8 @@ SECTIONS = [("summary", "快速摘要"), ("frameworks", "核心框架"), ("quote
 
 def note_view(n, prev_n, next_n):
     sid = n["id"]
-    nav = "".join(f'<a href="#{sid}" data-jump="{sid}-{k}">{E(lbl)}</a>' for k, lbl in SECTIONS)
+    secs_list = SECTIONS + ([("extra", "延伸補充")] if n.get("extra") else [])
+    nav = "".join(f'<a href="#{sid}" data-jump="{sid}-{k}">{E(lbl)}</a>' for k, lbl in secs_list)
     idx = "".join(f'<li><b>{E(k)}</b><span>{E(v)}</span></li>' for k, v in n["index"])
     bio = ""
     if n.get("bio"):
@@ -744,8 +753,9 @@ def note_view(n, prev_n, next_n):
     quotes = "".join(f'<blockquote class="q">{lines([x for x in q if not x.startswith("原文：")])}' + "".join(f'<span class="orig">{E(x)}</span>' for x in q if x.startswith("原文：")) + '</blockquote>' for q in n["quotes"])
     cases = "".join(f'<div class="case"><h3>{E(t)}</h3>' + "".join(block(b) for b in bs) + "</div>" for t, bs in n["cases"])
     acts = "".join(f'<div class="act"><h3><span class="role">{E(r)}</span></h3><ul>' + "".join(f"<li>{lines(it)}</li>" for it in items) + "</ul></div>" for r, items in n["actions"])
-    body = {"summary": summary, "frameworks": fw, "quotes": f'<div class="quotes">{quotes}</div>', "cases": cases, "actions": acts}
-    secs = "".join(f'<section class="part" id="{sid}-{k}"><h2>{E(lbl)}</h2>{body[k]}</section>' for k, lbl in SECTIONS)
+    extra = "".join(f'<div class="case"><h3>{E(t)}</h3>' + "".join(block(b) for b in bs) + "</div>" for t, bs in n.get("extra", []))
+    body = {"extra": extra, "summary": summary, "frameworks": fw, "quotes": f'<div class="quotes">{quotes}</div>', "cases": cases, "actions": acts}
+    secs = "".join(f'<section class="part" id="{sid}-{k}"><h2>{E(lbl)}</h2>{body[k]}</section>' for k, lbl in secs_list)
     pager = '<nav class="pager">'
     pager += f'<a href="#{prev_n["id"]}"><small>上一場</small>{E(prev_n["speaker"])}</a>' if prev_n else "<span></span>"
     pager += '<a href="#home" class="mid"><small>回到</small>全部場次</a>'
@@ -875,6 +885,12 @@ def note_md(n):
     out += ["---", "", "## 行動清單", ""]
     for role, items in n["actions"]:
         out += [f"**{role}**"] + ["- " + "".join(it) for it in items] + [""]
+    if n.get("extra"):
+        out += ["---", "", "## 延伸補充", ""]
+        for t, bs in n["extra"]:
+            out += [f"**{t}**", ""]
+            for b in bs:
+                out += [md_block(b), ""]
     return "\n".join(out)
 
 
